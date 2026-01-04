@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nathia Gali Forest Resort - Details</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background-color: #f2f2f2; }
+
+/* Navbar */
+nav {
+    background-color: #1e3d59;
+    padding: 15px 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Header */
+header {
+    background-color: #244f6e;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Main Container */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.resort-hero {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    margin-bottom: 30px;
+}
+
+.resort-hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.info-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    margin-bottom: 30px;
+}
+
+.info-section h2 {
+    color: #1e3d59;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.info-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #e67e22;
+}
+
+.info-card h3 {
+    color: #1e3d59;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.info-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.amenities-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.amenity-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 6px;
+}
+
+.amenity-item::before {
+    content: "✓";
+    color: #27ae60;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.price-box {
+    background: linear-gradient(135deg, #e67e22, #d35400);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.price-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.price-box .price {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.price-box small {
+    display: block;
+    margin-top: 5px;
+    opacity: 0.9;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 35px;
+    background-color: #e67e22;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+.btn-secondary {
+    background-color: #1e3d59;
+    margin-left: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #244f6e;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3d59;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="index.html">Resorts</a></li>
+    <li><a href="booking.html">Book Now</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+
+<header>
+    <h1>Nathia Gali Forest Resort</h1>
+    <p>📍 Nathia Gali, Khyber Pakhtunkhwa</p>
+</header>
+
+<div class="container">
+
+<div class="resort-hero">
+    <img src="nathia-gali-forest-resort.jpg" alt="Nathia Gali Forest Resort">
+</div>
+
+<div class="info-section">
+    <h2>About This Resort</h2>
+    <p style="line-height: 1.8; color: #555;">
+        Nathia Gali Forest Resort is a charming mountain retreat nestled deep within ancient pine forests at 
+        an altitude of 8,000 feet. This eco-friendly resort features cozy wooden cottages that blend seamlessly 
+        with the natural surroundings, offering a peaceful escape from urban life. The resort is famous for its 
+        hiking trails, birdwatching opportunities, and fresh mountain air. Wake up to the sound of birds chirping 
+        and enjoy the magical experience of living among towering pine trees and misty mountains.
+    </p>
+</div>
+
+<div class="info-section">
+    <h2>Accommodation Details</h2>
+    <div class="info-grid">
+        <div class="info-card">
+            <h3>🛏️ Bedrooms</h3>
+            <p>Wooden Cottages: 2-3 beds<br>
+            Family Cabins: 4 beds<br>
+            Premium Log Houses: 5 beds</p>
+        </div>
+        
+        <div class="info-card">
+            <h3>👥 Capacity</h3>
+            <p>Cottages: 2-4 guests<br>
+            Cabins: 4-5 guests<br>
+            Log House: 5-7 guests</p>
+        </div>
+        
+        <div class="info-card">
+            <h3>🚿 Bathrooms</h3>
+            <p>Eco-friendly bathrooms with hot water geysers, organic soaps, and modern fixtures</p>
+        </div>
+        
+        <div class="info-card">
+            <h3>📏 Room Size</h3>
+            <p>Cottages: 250 sq ft<br>
+            Cabins: 370 sq ft<br>
+            Log House: 550 sq ft</p>
+        </div>
+    </div>
+</div>
+
+<div class="info-section">
+    <h2>Amenities & Facilities</h2>
+    <div class="amenities-list">
+        <div class="amenity-item">Wi-Fi in Common Areas</div>
+        <div class="amenity-item">Restaurant & Café</div>
+        <div class="amenity-item">Nature Hiking Trails</div>
+        <div class="amenity-item">Birdwatching Tours</div>
+        <div class="amenity-item">Bonfire Area</div>
+        <div class="amenity-item">Outdoor Seating</div>
+        <div class="amenity-item">Heaters in Rooms</div>
+        <div class="amenity-item">Room Service</div>
+        <div class="amenity-item">Guided Forest Walks</div>
+        <div class="amenity-item">Parking Available</div>
+        <div class="amenity-item">Reading Lounge</div>
+        <div class="amenity-item">Organic Garden</div>
+    </div>
+</div>
+
+<div class="info-section">
+    <h2>Additional Information</h2>
+    <div class="info-grid">
+        <div class="info-card">
+            <h3>✈️ Distance from Airport</h3>
+            <p>Islamabad Airport: 85 km (2.5 hours drive)</p>
+        </div>
+        
+        <div class="info-card">
+            <h3>🍽️ Dining Options</h3>
+            <p>On-site restaurant serving organic local cuisine, traditional desi breakfast, and homemade specialties</p>
+        </div>
+        
+        <div class="info-card">
+            <h3>⏰ Check-in/Check-out</h3>
+            <p>Check-in: 2:00 PM<br>
+            Check-out: 11:00 AM</p>
+        </div>
+        
+        <div class="info-card">
+            <h3>🌡️ Best Time to Visit</h3>
+            <p>May to September for hiking. December to February for snow experience and cozy winter retreat</p>
+        </div>
+    </div>
+</div>
+
+<div class="price-box">
+    <h3>Starting Price</h3>
+    <div class="price">PKR 18,000+</div>
+    <small>Per night (breakfast included)</small>
+</div>
+
+<div style="text-align: center; padding: 20px;">
+    <a href="booking.html" class="btn">Book Now</a>
+    <a href="index.html" class="btn btn-secondary">Back to Resorts</a>
+</div>
+
+</div>
+
+<footer>
+<p>&copy; 2026 Pakistan Resorts</p>
+</footer>
+
+</body>
+</html>

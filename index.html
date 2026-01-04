@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pakistan Resorts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: Arial, sans-serif; background-color: #f2f2f2; }
+
+/* Navbar */
+nav {
+    background-color: #1e3d59;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Header */
+header {
+    background-color: #244f6e;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+header h1 {
+    font-size: 2.8rem;
+}
+header p {
+    font-size: 1.2rem;
+}
+
+/* Resort Grid */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.resort {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+.resort:hover {
+    transform: translateY(-8px);
+}
+
+.resort img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    color: #1e3d59;
+}
+
+.location {
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.description {
+    margin: 10px 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #e67e22;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3d59;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="index.html">Resorts</a></li>
+    <li><a href="booking.html">Book Now</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+
+<header>
+    <h1>Famous Resorts of Pakistan</h1>
+    <p>Luxury • Nature • Comfort</p>
+</header>
+
+<div class="container">
+
+<div class="resort">
+    <img src="shangrila-resort.jpg" alt="Shangrila Resort">
+    <div class="content">
+        <h2>Shangrila Resort</h2>
+        <p class="location">📍 Skardu</p>
+        <p class="description">Beautiful lakeside resort surrounded by mountains.</p>
+        <p class="price">PKR 30,000+</p>
+        <a href="shangrila-info.html" class="btn">View Details</a>
+    </div>
+</div>
+
+<div class="resort">
+    <img src="pearl-continental-bhurban.jpg" alt="Pearl Continental Bhurban">
+    <div class="content">
+        <h2>Pearl Continental Bhurban</h2>
+        <p class="location">📍 Murree</p>
+        <p class="description">Luxury hill resort with spa and views.</p>
+        <p class="price">PKR 35,000+</p>
+        <a href="pearl-continental-info.html" class="btn">View Details</a>
+    </div>
+</div>
+
+<div class="resort">
+    <img src="serena-shigar-fort.jpg" alt="Serena Shigar Fort">
+    <div class="content">
+        <h2>Serena Shigar Fort</h2>
+        <p class="location">📍 Shigar Valley</p>
+        <p class="description">Historic fort with modern comfort.</p>
+        <p class="price">PKR 40,000+</p>
+        <a href="serena-shigar-info.html" class="btn">View Details</a>
+    </div>
+</div>
+
+<div class="resort">
+    <img src="monal-resort.jpg" alt="Monal Resort">
+    <div class="content">
+        <h2>Monal Resort</h2>
+        <p class="location">📍 Islamabad</p>
+        <p class="description">Stunning hilltop retreat with panoramic city views and traditional architecture.</p>
+        <p class="price">PKR 25,000+</p>
+        <a href="monal-info.html" class="btn">View Details</a>
+    </div>
+</div>
+
+<div class="resort">
+    <img src="lakeside-resort-khanpur.jpg" alt="Lakeside Resort Khanpur">
+    <div class="content">
+        <h2>Lakeside Resort Khanpur</h2>
+        <p class="location">📍 Khanpur Dam</p>
+        <p class="description">Peaceful waterfront escape with modern lakeside cottages and water sports.</p>
+        <p class="price">PKR 20,000+</p>
+        <a href="khanpur-info.html" class="btn">View Details</a>
+    </div>
+</div>
+
+<div class="resort">
+    <img src="nathia-gali-forest-resort.jpg" alt="Nathia Gali Forest Resort">
+    <div class="content">
+        <h2>Nathia Gali Forest Resort</h2>
+        <p class="location">📍 Nathia Gali</p>
+        <p class="description">Cozy wooden cottages nestled in pine forests with hiking trails.</p>
+        <p class="price">PKR 18,000+</p>
+        <a href="nathia-gali-info.html" class="btn">View Details</a>
+    </div>
+</div>
+
+</div>
+
+<footer>
+<p>&copy; 2026 Pakistan Resorts</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Resort</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background:
+                linear-gradient(rgba(0, 60, 90, 0.55), rgba(0, 60, 90, 0.55)),
+                url("A_high-resolution_digital_photograph_with_an_overl.png") center/cover no-repeat;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 60px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #7dd9ff;
+        }
+
+        .hero {
+            height: calc(100vh - 100px);
+            display: flex;
+            align-items: center;
+            padding-left: 80px;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 35px;
+            color: #e0f6ff;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #1fa2c7;
+            color: white;
+            padding: 14px 34px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn.secondary {
+            background: transparent;
+            border: 2px solid #7dd9ff;
+        }
+
+        .btn:hover {
+            background: #1483a1;
+        }
+
+        .btn.secondary:hover {
+            background: #7dd9ff;
+            color: #003c5a;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 40px;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .buttons {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Holiday Resort</div>
+    <nav>
+        <a href="index.html">Resorts</a>
+        <a href="booking.html">Book Now</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Escape to Paradise</h1>
+        <p>
+            Discover breathtaking destinations, luxury stays, and unforgettable
+            experiences across Pakistan’s most beautiful resorts.
+        </p>
+
+        <div class="buttons">
+            <a href="index.html" class="btn">Explore Resorts</a>
+            <a href="booking.html" class="btn secondary">Book Your Stay</a>
+			
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

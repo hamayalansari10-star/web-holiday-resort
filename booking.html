@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Resort Booking</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background-color: #f2f2f2; }
+
+nav {
+    background-color: #1e3d59;
+    padding: 15px 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+header {
+    background-color: #244f6e;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    background: #e67e22;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #d35400;
+}
+
+footer {
+    margin-top: 40px;
+    background: #1e3d59;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="index.html">Resorts</a></li>
+    <li><a href="booking.html">Book Now</a></li>
+	<li><a href="About.html">About</a></li>
+	<li><a href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+
+<header>
+    <h1>Book Your Stay</h1>
+    <p>Reserve your perfect getaway</p>
+</header>
+
+<div class="container">
+<form>
+    <label>Resort</label>
+    <select>
+        <option>Shangrila Resort</option>
+        <option>Pearl Continental Bhurban</option>
+        <option>Serena Shigar Fort</option>
+    </select>
+
+    <label>Check-in</label>
+    <input type="date">
+
+    <label>Check-out</label>
+    <input type="date">
+
+    <label>Full Name</label>
+    <input type="text">
+
+    <label>Email</label>
+    <input type="email">
+
+    <label>Guests</label>
+    <input type="number" min="1">
+
+    <input type="submit" value="Confirm Booking">
+</form>
+</div>
+
+<footer>
+<p>&copy; 2026 Pakistan Resorts</p>
+</footer>
+
+</body>
+</html>
